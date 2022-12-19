@@ -2,7 +2,7 @@ use crate::chunk_type::ChunkType;
 use crate::{Error, Result};
 use crc::{Algorithm, Crc};
 use std::convert::TryFrom;
-use std::fmt::{write, Display};
+use std::fmt::Display;
 pub struct Chunk {
     length: u32,
     chunk_type: ChunkType,

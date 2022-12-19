@@ -4,7 +4,7 @@ use std::str::FromStr;
 
 use crate::args::{Decode, Encode, Print, Remove};
 use crate::png::{Chunk, ChunkType, Png};
-use crate::{Error, Result};
+use crate::Result;
 
 /// Encodes a message into a PNG file and saves the result
 pub fn encode(args: Encode) -> Result<()> {
